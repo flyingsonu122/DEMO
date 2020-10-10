@@ -1,0 +1,10 @@
+.show {
+  border: 3px solid rebeccapurple;
+  margin: 40px auto;
+  padding: 30px auto;
+}
+
+img {
+  height: 85vh;
+  width: 80vw;
+}
