@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://code.jquery.com/jquery-latest.js"></script>
+        <script src="https://malsup.github.com/jquery.cycle.all.js"></script>
+        <style>
+            .show {
+                border: 3px solid rebeccapurple;
+                margin: 40px auto;
+                padding: 30px auto;
+            }
+
+            img {
+                height: 85vh;
+                width: 80vw;
+            }
+        </style>
+    </head>
+
+    <body>
+
+
+        <div id="slideshow" class="show">
+            <img src="./images/github.png" alt="github">
+            <img src="./images/minimalBlog.png" alt="minimalBlog">
+            <img src="./images/twitterbot.png" alt="twitterbot">
+        </div>
+
+
+        <script>
+            $(document).ready(function () {
+                $("#slideshow").cycle();
+            });
+
+        </script>
+
+    </body>
+    <!-- Made by Sonu kumar kushwaha -->
+
+</html>
