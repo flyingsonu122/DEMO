@@ -12,3 +12,5 @@
 
 ##### [version 6 ](https://flyingsonu122.github.io/DEMO/version%206/)
 
+##### [version 7 ](https://flyingsonu122.github.io/DEMO/version%207)
+
