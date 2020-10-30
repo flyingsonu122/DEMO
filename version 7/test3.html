@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>select | option</title>
+        <link rel="stylesheet" href="./style.css">
+
+
+    </head>
+
+    <body>
+
+
+        <label for="planets">choose a planet :</label>
+        <select name="planets" id="planets">
+            <option value="1">Select One …</option>
+            <option value="mercury">Mercury</option>
+            <option value="venus">Venus</option>
+            <option value="earth">Earth</option>
+            <option value="mars">Mars</option>
+            <option value="jupiter">Jupiter</option>
+            <option value="saturn">Saturn</option>
+            <option value="uranus">Uranus</option>
+            <option value="neptune">Neptune</option>
+        </select>
+
+
+        <div class="container">
+            <h3>Interesting Planet Facts</h3>
+            <p>There are more planets than stars in our galaxy. The current count orbiting our star (SUN):
+                <strong>eight</strong>.</p>
+            <p>The inner, rocky planets are Mercury, Venus, Earth and Mars. The outer planets are gas giants Jupiter and
+                Saturn and ice giants Uranus and Neptune.</p>
+        </div>
+        <div class="container" id="log">
+            <p id="mercury">
+                <strong>Mercury</strong> – The smallest and fastest planet, it zips around the Sun in only 88 Earth
+                days.
+            </p>
+            <p id="venus">
+                <strong>Venus</strong> – Venus’ thick atmosphere makes it the hottest planet in our solar system.
+            </p>
+            <p id="earth">
+                <strong>Earth</strong> – The only planet in our solar system with liquid water on the surface.
+            </p>
+            <p id="mars">
+                <strong>Mars</strong> – Mars was a wet and warm planet billions of years ago.
+            </p>
+            <p id="jupiter">
+                <strong>Jupiter</strong> – The largest planet, its dark red spot is a storm larger than Earth.
+            </p>
+            <p id="saturn">
+                <strong>Saturn</strong> – Saturn has the brightest, most massive and most complex ring system of any
+                planet.
+            </p>
+            <p id="uranus">
+                <strong>Uranus</strong> – Uranus is tipped on its axis by almost 90-degrees.
+            </p>
+            <p id="neptune">
+                <strong>Neptune</strong> – Neptune was the first planet discovered through mathematical calculations,
+                rather than observation.
+            </p>
+
+        </div>
+        <script>
+            const planet = document.getElementById("planets");
+
+            const log = document.getElementById('log');
+
+            planet.addEventListener('change', updateValue);
+
+            function updateValue(e) {
+
+                // log.textContent = `You like ${e.target.value}`;
+                
+
+                if (event.target.value == "mercury") {
+                    mercury.classList.add("visible");
+                    log.classList.add("hidden"); 
+                }
+                else if (event.target.value == "venus") {
+                    venus.classList.add("visible");
+                    log.classList.add("hidden");
+                }
+                else if (event.target.value == "earth") {
+                    earth.classList.add("visible");
+                    log.classList.add("hidden");
+                }
+                else if (event.target.value == "mars") {
+                    mars.classList.add("visible");
+                    log.classList.add("hidden");
+                }
+                else if (event.target.value == "jupiter") {
+                    jupiter.classList.add("visible");
+                    log.classList.add("hidden");
+                }
+                else if (event.target.value == "saturn") {
+                    saturn.classList.add("visible");
+                    log.classList.add("hidden");
+                }
+                else if (event.target.value == "uranus") {
+                    uranus.classList.add("visible");
+                    log.classList.add("hidden");
+                }
+                else if (event.target.value == "neptune") {
+                    neptune.classList.add("visible");
+                    log.classList.add("hidden");
+                }
+
+
+            }
+        </script>
+
+    </body>
+    <!-- Made by Sonu kumar kushwaha -->
+
+</html>
