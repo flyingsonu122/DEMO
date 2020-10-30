@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>select | option</title>
+        <style>
+            body {
+                text-align: center;
+            }
+            select {
+                width: 255px;
+                padding: 15px 20px;
+                border: none;
+                border-radius: 4px;
+                background-color: #f1f1f1;
+            }
+
+            .container {
+                margin: 45px auto;
+                padding: 15px 20px;
+                width: 50%;
+                color: white;
+            }
+        </style>
+
+
+    </head>
+
+    <body>
+
+
+        <label for="colors">choose a color :</label>
+        <select name="colors" id="colors">
+            <option value="">Select One …</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+            <option value="black">Black</option>
+        </select>
+
+
+
+        <div class="container"></div>
+
+        <script>
+            function getColor() {
+
+                const color = document.getElementById("colors");
+                color.addEventListener('change', (event) => {
+                    const container = document.querySelector('.container');
+                    container.textContent = `You like ${event.target.value}`;
+
+                    if (event.target.value == "red") {
+                        container.style.backgroundColor = "red";
+                    }
+                    else if (event.target.value == "blue") {
+                        container.style.backgroundColor = "blue";
+                    }
+                    else if (event.target.value == "green") {
+                        container.style.backgroundColor = "green";
+                    }
+                    else if (event.target.value == "black") {
+                        container.style.backgroundColor = "black";
+                    }
+                });
+
+
+            }
+
+        </script>
+
+        <script>
+
+            getColor();
+        </script>
+    </body>
+    <!-- Made by Sonu kumar kushwaha -->
+
+</html>
