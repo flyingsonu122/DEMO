@@ -5,21 +5,37 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Search</title>
-        
+        <style>
+            input[type=search] {
+                width: 300px;
+                box-sizing: border-box;
+                border: 2px solid #ccc;
+                border-radius: 4px;
+                background-color: white;
+                -webkit-transition: width 0.4s ease-in-out;
+                transition: width 0.4s ease-in-out;
+            }
+
+            input[type=submit]:focus {
+                width: 60%;
+            }
+        </style>
+
 
     </head>
 
     <body>
 
+        <p>Animated Google Search Form</p>
+
         <form action="https://google.com/search" method="get">
-            <input name="q" type="search" autocomplete="off">
+            <input name="q" type="search" autocomplete="off" placeholder="type here to search and press Enter">
             <input type="submit" value="search">
 
         </form>
+
         <br><br><br><br>
 
-        
-        
 
     </body>
     <!-- Made by Sonu kumar kushwaha -->
