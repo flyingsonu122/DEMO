@@ -1,13 +1,62 @@
 
 C:.
+│   README.md
+│   tree.txt
+│   
 ├───version 1
+│       index.html
+│       README.md
+│       style.css
+│       
 ├───version 2
+│   │   a.css
+│   │   index.html
+│   │   README.md
+│   │   
 │   └───images
+│           back.jpg
+│           
 ├───version 3
+│   │   index.html
+│   │   README.md
+│   │   style.css
+│   │   
 │   ├───images
+│   │       github.png
+│   │       minimalBlog.png
+│   │       twitterbot.png
+│   │       
 │   └───js
+│           jquery-latest.js
+│           jquery.cycle.all.js
+│           main.js
+│           
 ├───version 4
+│       index.html
+│       site.jpg
+│       style.css
+│       
 ├───version 5
+│       index.html
+│       
 ├───version 6
+│       index.md
+│       test.html
+│       test1.html
+│       test2.html
+│       
 ├───version 7
+│       data.html
+│       db.json
+│       index.md
+│       style.css
+│       test1.html
+│       test2.html
+│       test3.html
+│       test4.html
+│       test5.html
+│       test6.html
+│       
 └───version 8
+        index.html
+        

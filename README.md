@@ -1,4 +1,7 @@
-## Watch live demo on [https://flyingsonu122.github.io/DEMO/](https://flyingsonu122.github.io/DEMO/)
+
+## Watch live demo of all versions
+
+[https://flyingsonu122.github.io/DEMO/](https://flyingsonu122.github.io/DEMO/)
 
 ### [version 1 ](https://flyingsonu122.github.io/DEMO/version%201/index.html)
 
@@ -17,8 +20,84 @@
 ### [version 8 ](https://flyingsonu122.github.io/DEMO/version%208)
 
 
+<br><br>
 
 
+---
+
+
+
+<br>
+
+> Directory **tree > tree.txt /f**
+```bash
+
+C:.
+│   README.md
+│   tree.txt
+│   
+├───version 1
+│       index.html
+│       README.md
+│       style.css
+│       
+├───version 2
+│   │   a.css
+│   │   index.html
+│   │   README.md
+│   │   
+│   └───images
+│           back.jpg
+│           
+├───version 3
+│   │   index.html
+│   │   README.md
+│   │   style.css
+│   │   
+│   ├───images
+│   │       github.png
+│   │       minimalBlog.png
+│   │       twitterbot.png
+│   │       
+│   └───js
+│           jquery-latest.js
+│           jquery.cycle.all.js
+│           main.js
+│           
+├───version 4
+│       index.html
+│       site.jpg
+│       style.css
+│       
+├───version 5
+│       index.html
+│       
+├───version 6
+│       index.md
+│       test.html
+│       test1.html
+│       test2.html
+│       
+├───version 7
+│       data.html
+│       db.json
+│       index.md
+│       style.css
+│       test1.html
+│       test2.html
+│       test3.html
+│       test4.html
+│       test5.html
+│       test6.html
+│       
+└───version 8
+        index.html
+        
+
+
+```
+
+<br><br>
 
 **MIT &copy; [Sonu kumar kushwaha](https://github.com/flyingsonu122)**
 
