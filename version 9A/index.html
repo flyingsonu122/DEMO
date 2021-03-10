@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                height: 100vh;
+                /* overflow-x: hidden; */
+                overflow: hidden;
+            }
+
+            .main {
+                display: flex;
+                width: 100vw;
+                background-color: red;
+                padding: 0;
+                margin: 0;
+            }
+
+            .one {
+                display: flex;
+                background-color: white;
+                height: 100vh;
+                width: 30vw;
+                align-items: center;
+            }
+
+            .two {
+                background-color: yellow;
+                height: 100vh;
+                width: 70vw;
+            }
+
+            .btn {
+                text-align: center;
+                align-items: center;
+                background-color: red;
+                width: 100vw;
+                margin: 0;
+                padding: 0;
+            }
+
+            #btn {
+                padding: 25px auto;
+            }
+
+            #btn:hover {
+                cursor: pointer;
+                background-color: aqua;
+                padding: 25px auto;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="btn">
+            <button id="btn">Click Me</button>
+        </div>
+        <div class="main">
+            <div class="one" id="o">
+                <h1 id="hello">Hello world</h1>
+
+            </div>
+            <div class="two" id="t">
+                <h1 id="bye">Bye World!</h1>
+
+            </div>
+        </div>
+
+        <script>
+            const btn = document.getElementById("btn");
+            const hello = document.getElementById("hello");
+            const bye = document.getElementById("bye");
+            
+            var first_click = true;
+            btn.onclick = function () {
+                if (first_click) {
+                    // do stuff for first click
+                    change();
+                    first_click = false;
+                } else {
+                    // do stuff for second click
+                    nochange();
+                    first_click = true;
+                }
+            }
+
+            function change() {
+                hello.style.display = "none";
+                bye.style.display = "";
+
+            }
+
+            function nochange() {
+                hello.style.display = "";
+                bye.style.display = "none";
+
+            }
+        </script>
+    </body>
+
+</html>
